@@ -1,0 +1,16 @@
+{
+  "bgs": [
+    "CDG",
+    "CSIG",
+    "IEG",
+    "PCG",
+    "TEG",
+    "WXG",
+    "S1",
+    "S2",
+    "S3",
+    "OFS"
+  ],
+  "template_root": "./project_template",
+  "exact_reproduction_note": "如要复刻最终 html/md，请填充与原工程一致的输入文件；1.3 若依赖 LLM 生成的 output/{bg}/*.md，建议直接提供这些 md，或使用内置 Prompt + temperature=0 重新生成。"
+}
