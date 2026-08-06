@@ -98,6 +98,7 @@ python3 run_report_pipeline.py --bgs CSIG --steps extract-open-feedback step1-ex
 - `references/pipeline_overview.md`
 - `references/input_templates.md`
 - `references/model_and_repro.md`
+- `references/handover_scripts.md`（交接用：全部脚本职责、上下游、已知问题）
 
 ## Model Replacement Rules
 

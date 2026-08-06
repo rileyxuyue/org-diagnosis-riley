@@ -10,7 +10,7 @@ import os
 import re
 from html import escape as html_escape
 
-WORKSPACE = '/Users/xuyue/Desktop/workbuddy/task2 report'
+WORKSPACE = os.path.dirname(os.path.abspath(__file__))
 SRC_DIR = os.path.join(WORKSPACE, '【全面反馈】/output/csig')
 REPORT_MD_DIR = os.path.join(WORKSPACE, '报告/csig/md')
 REPORT_HTML_DIR = os.path.join(WORKSPACE, '报告/csig/html')

@@ -21,9 +21,9 @@ MEANINGLESS_KW = {
     'na','NA','N/A','n/a','none','None',
 }
 
-LLM_API_URL = 'http://127.0.0.1:8000/v1/chat/completions'
-LLM_KEY     = '919101'
-LLM_MODEL   = 'Qwen2.5-32B-Instruct-4bit'
+LLM_API_URL = os.environ.get('ORG_DIAG_LLM_URL', 'http://127.0.0.1:1234/v1/chat/completions')
+LLM_KEY     = os.environ.get('ORG_DIAG_LLM_API_KEY', 'lm-studio')
+LLM_MODEL   = os.environ.get('ORG_DIAG_LLM_MODEL', 'qwen2.5-7b-instruct-mlx')
 
 FILE_PAIRS = [
     ('CSIG', 'CSIG_敬满开放题关键词汇总.xlsx', 'CSIG_敬满开放题关键词分析.xlsx'),

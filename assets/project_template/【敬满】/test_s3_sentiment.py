@@ -15,12 +15,12 @@ import pandas as pd
 from collections import Counter
 
 # ── 配置 ──────────────────────────────────────────
-BASE_DIR   = '/Users/xuyue/Desktop/workbuddy/task2 report/【敬满】'
+BASE_DIR   = os.path.dirname(os.path.abspath(__file__))
 CACHE_FILE = os.path.join(BASE_DIR, 'sentiment_cache.json')
 
-LLM_API_URL = 'http://127.0.0.1:8000/v1/chat/completions'
-LLM_KEY     = '919101'
-LLM_MODEL   = 'Qwen2.5-32B-Instruct-4bit'
+LLM_API_URL = os.environ.get('ORG_DIAG_LLM_URL', 'http://127.0.0.1:1234/v1/chat/completions')
+LLM_KEY     = os.environ.get('ORG_DIAG_LLM_API_KEY', 'lm-studio')
+LLM_MODEL   = os.environ.get('ORG_DIAG_LLM_MODEL', 'qwen2.5-7b-instruct-mlx')
 
 # 测试：只跑 S3
 BG_LIST = [
